@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Hitung Karkas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Kalkulator Hitung Karkas</h1>
+    </header>
+
+    <main>
+      <section>
+        <p>Hitung karkas domba</p>
+      </section>
+      
+       <!-- perhitungan -->
+      <section class="section-content"> 
+        <div class="section-item">
+          <label for="input-kg">Berat domba dalam kilogram (kg):</label> <!-- hitung berat domba -->
+          <input type="number" id="input-kg" placeholder="Masukkan berat domba" />
+        </div>
+
+        <div class="section-item">
+          <label for="input-sampil">Sampil dalam kilogram (kg):</label> <!-- hitung berat sampil -->
+          <input type="number" id="input-sampil" placeholder="Masukkan berat sampil" />
+        </div>
+
+        <div class="section-item">
+          <label for="input-tulang">Tulang dalam kilogram (kg):</label> <!-- hitung berat tulang -->
+          <input type="number" id="input-tulang" placeholder="Masukkan berat tulang" />
+        </div>
+
+        <div class="section-item button-group">
+          <button class="btn_konversi" onclick="hitungKarkas()">Hitung Karkas</button> <!-- tombol hitung -->
+          <button class="btn_hapus" onclick="hapus()">Hapus</button> <!-- tombol hapus -->
+        </div>
+      </section>
+
+      <section class="section-content">
+        <div class="section-item">
+          <label for="penjelasan">Hasil:</label> <!-- box hasil -->
+          <textarea id="penjelasan" rows="4" readonly></textarea>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 ArdinFz. All rights reserved.</footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
