@@ -70,6 +70,11 @@ button {
   flex-wrap: wrap;
 }
 
+#penjelasan {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 footer {
   margin-top: 20px;
   font-size: 0.9rem;
